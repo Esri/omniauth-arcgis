@@ -25,6 +25,7 @@ class SinatraApp < Sinatra::Base
 
   configure do
     set :sessions, true
+    set :session_secret, 'foo'
   end
 
   use OmniAuth::Builder do

@@ -16,9 +16,6 @@ module OmniAuth
         :parse => :json
       }
 
-      # AGO doesn't support the state parameter yet
-      option :provider_ignores_state, true
-
       uid { 
         raw_info['id'] 
       }
